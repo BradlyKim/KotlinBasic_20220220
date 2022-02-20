@@ -103,6 +103,15 @@ class MainActivity : AppCompatActivity() {
             }
             
         }
+
+        btnCalculateAge.setOnClickListener {
+
+//            1. edtBirthYear 에 입력된 값(text)을 받아오기 => 변수 저장해두기
+
+            val inputBirthYear = edtBirthYear.text.toString()
+            Log.d("입력된 년도", inputBirthYear)
+
+        }
         
     }
 }
