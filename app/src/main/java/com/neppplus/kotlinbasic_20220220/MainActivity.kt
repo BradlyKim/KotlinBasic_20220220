@@ -76,5 +76,33 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnConditionPractice2.setOnClickListener { 
+            
+            val salary = 4000 
+            val minutes = 50
+            val overWork = false
+//            기준1. 연봉이 5000이상이면 OK
+            if (salary >= 5000) {
+                Toast.makeText(this, "연봉이 5천 이상", Toast.LENGTH_SHORT).show()
+            }
+
+//            기준2. 야근만 안 하면 OK
+            if (!overWork) {
+//                 overWork 변수에 true가 있을때만 실행 => NOT 부정 : 야근을 하지 않으면
+                Toast.makeText(this, "야근을 안 함", Toast.LENGTH_SHORT).show()
+            }
+
+//            기준3. 연봉 4000이상 + 거리 30분 이내
+            if(salary >= 4000 && minutes < 30 ) {
+                Toast.makeText(this, "연봉 and 출퇴근 시간 OK", Toast.LENGTH_SHORT).show()
+            }
+
+//            기준4. 연봉 5000이상 or 거리 1시간 이내
+            if(salary >= 5000 || minutes < 60) {
+                Toast.makeText(this, "연봉 or 출퇴근시간 OK", Toast.LENGTH_SHORT).show()
+            }
+            
+        }
+        
     }
 }
