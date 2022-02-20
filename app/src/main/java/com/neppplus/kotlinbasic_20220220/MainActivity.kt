@@ -81,6 +81,7 @@ class MainActivity : AppCompatActivity() {
             val salary = 4000 
             val minutes = 50
             val overWork = false
+
 //            기준1. 연봉이 5000이상이면 OK
             if (salary >= 5000) {
                 Toast.makeText(this, "연봉이 5천 이상", Toast.LENGTH_SHORT).show()
