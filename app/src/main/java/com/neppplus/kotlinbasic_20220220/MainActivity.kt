@@ -47,6 +47,8 @@ class MainActivity : AppCompatActivity() {
             
             myName = "김도훈"  // var은 데이터 변경 가능
 //          friendName = "김시연"  // val은 데이터 변경 불가
+
+            Toast.makeText(this, myName, Toast.LENGTH_SHORT).show()
             
         }
 
