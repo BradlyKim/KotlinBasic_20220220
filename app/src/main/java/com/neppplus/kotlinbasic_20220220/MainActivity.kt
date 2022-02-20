@@ -111,6 +111,12 @@ class MainActivity : AppCompatActivity() {
             val inputBirthYear = edtBirthYear.text.toString()
             Log.d("입력된 년도", inputBirthYear)
 
+//            2. 2022년의 나이?
+            val age = 2022 - inputBirthYear.toInt() + 1  // age : Int 형태
+
+//            3. 계산된 나이를 토스트로 출력
+            Toast.makeText(this, "${age}살 입니다.", Toast.LENGTH_SHORT).show()
+
         }
         
     }
